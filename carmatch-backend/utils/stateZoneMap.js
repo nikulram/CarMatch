@@ -1,0 +1,56 @@
+// utils/stateZoneMap.js
+
+module.exports = {
+  // Major urban
+  "New York": "major",
+  "California": "major",
+  "Texas": "major",
+  "Florida": "major",
+  "Illinois": "major",
+  "Washington": "major",
+  "Massachusetts": "major",
+  "Pennsylvania": "major",
+
+  // Mid-size states
+  "Ohio": "mid",
+  "Michigan": "mid",
+  "North Carolina": "mid",
+  "Georgia": "mid",
+  "Arizona": "mid",
+  "Colorado": "mid",
+  "Tennessee": "mid",
+  "Indiana": "mid",
+  "Minnesota": "mid",
+  "Wisconsin": "mid",
+  "Missouri": "mid",
+  "Virginia": "mid",
+  "South Carolina": "mid",
+
+  // Rural or spread-out states
+  "Montana": "rural",
+  "Wyoming": "rural",
+  "North Dakota": "rural",
+  "South Dakota": "rural",
+  "Maine": "rural",
+  "Alaska": "rural",
+  "Vermont": "rural",
+  "Idaho": "rural",
+  "Iowa": "rural",
+  "Nebraska": "rural",
+  "Arkansas": "rural",
+  "West Virginia": "rural",
+  "Mississippi": "rural",
+  "New Mexico": "rural",
+  "Louisiana": "rural",
+  "Alabama": "rural",
+  "Hawaii": "rural",
+  "Oklahoma": "rural",
+  "Delaware": "rural",
+  "Rhode Island": "rural",
+  "Utah": "rural",
+  "Kansas": "rural",
+  "Nevada": "rural",
+  "Kentucky": "rural",
+  "New Hampshire": "rural",
+  "Connecticut": "rural"
+};

@@ -1,0 +1,34 @@
+.splash-container {
+  text-align: center;
+  height: 100%;
+  overflow: hidden; /* Prevent scroll */
+}
+
+
+/* .splash-logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2563EB;
+  letter-spacing: 1px;
+  animation: fadeIn 1s ease-out;
+} */
+
+/* .splash-subtitle {
+  margin-top: 10px;
+  animation: scaleIn 1s ease-out;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+} */
+
+/* @keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+@keyframes scaleIn {
+  from { transform: scale(0.5); }
+  to {transform: scale(1); }
+
+} */

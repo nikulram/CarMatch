@@ -1,0 +1,36 @@
+.verify-container {
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.verify-container h2 {
+  margin-bottom: 10px;
+}
+
+.verify-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.verify-container .error {
+  color: #c00;
+  margin-top: 10px;
+}
+
+.verify-container button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

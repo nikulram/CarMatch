@@ -1,0 +1,62 @@
+.settings-wrapper {
+  padding: 30px 20px;
+  max-width: 430px;
+  margin-inline: auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh; /* ensure full screen */
+}
+
+.settings-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.settings-top h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.settings-back {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.settings-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settings-buttons button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  border: 1px solid var(--nav-boarder);
+  background: var(--card-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: background 0.2s ease;
+}
+
+.settings-buttons button:hover {
+  background: var(--icon-containers, #f0f0f0); /* fallback if --icon-containers isn't defined */
+}
+
+.settings-footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: var(--nav-boarder);
+  text-align: center;
+}

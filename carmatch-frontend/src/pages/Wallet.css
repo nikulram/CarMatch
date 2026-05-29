@@ -1,0 +1,181 @@
+.wallet-container {
+  padding: 16px;
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Header Titles */
+.wallet-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Balance Card */
+.wallet-balance {
+  padding: 2px;
+  background: linear-gradient(to right, #4F47C8, #CD5799);
+  color: var(--text-color);
+  border-radius: 20px;
+  margin-bottom: 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.wallet-balance h3 {
+  margin: 40px;
+  font-size: 28px;
+  margin: 0;
+}
+
+.wallet-balance span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.85;
+  margin-top: 4px;
+  
+}
+
+/* Action Buttons */
+.balance-actions {
+  padding: 12px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.balance-actions button {
+  flex: 1;
+  background: white;
+  color: #8b5cf6;
+  border: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.balance-actions button:hover {
+  background: #f1efff;
+}
+
+/* Sections */
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 24px 0 12px;
+}
+
+/* Card Boxes */
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--boarder);
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-meta {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.card-buttons button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card-buttons button:hover {
+  filter: brightness(1.1);
+}
+
+/* Add Card Placeholder */
+.add-card-box {
+  background: var(--card-bg);
+  border: 1px dashed var(--boarder);
+  padding: 20px;
+  text-align: center;
+  border-radius: 14px;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Other Payment Options */
+.payment-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid var(--boarder);
+  margin-bottom: 12px;
+}
+
+/* Recent Transactions */
+.transaction-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--boarder);
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.transaction-type {
+  font-weight: 600;
+}
+
+.transaction-amount {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.transaction-amount.positive {
+  color: #22c55e;
+}
+
+.transaction-amount.negative {
+  color: #ef4444;
+}
+
+/* "See All" link */
+.see-all-link {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: var(--primary-color);
+  cursor: pointer;
+}

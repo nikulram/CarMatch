@@ -1,0 +1,74 @@
+.map-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.75);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-modal-box {
+  width: 100%;
+  max-width: 430px;
+  height: 95vh;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.leaflet-map-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.map-bottom-bar {
+  padding: 12px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.map-address-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+}
+
+.map-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.map-cancel {
+  flex: 1;
+  background: #eee;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.map-confirm {
+  flex: 1;
+  background: #4caf50;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}

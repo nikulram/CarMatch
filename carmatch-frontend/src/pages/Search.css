@@ -1,0 +1,155 @@
+.swipe-card-container {
+  position: relative;
+  height: 400px;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  background: var(--bg-color); /* use theme variable */
+}
+
+.no-more-cards {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  margin-top: 16px;
+  margin-bottom: 14px;
+  position: sticky;
+  bottom: 0;
+  /* background: #fff; */
+  background: var(--bg-color); /* use theme variable */
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.undo-button, .fav-button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.buy-rent-toggle .grid-toggle-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  border-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background-color: #007bff;
+}
+
+.undo-button { background-color: #aaa; }
+.fav-button { background-color: #ff4757; }
+
+.tag-section {
+  padding: 10px 14px;
+  margin-top: 8px;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+.tag-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.tag-controls button {
+  padding: 5px 10%;
+  font-size:20px;
+  border: 1px solid #bbb;
+  border-radius: 25px;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+  cursor: pointer;
+  margin: 10px;
+}
+
+.tag-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  padding-bottom: 4px;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+
+.tag-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-pill {
+  padding: 6px 10px;
+  background-color: #eee;
+  border-radius: 25px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+  border: 1px solid #bbb;
+}
+
+.tag-pill.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Toggle for search Vehicle/People */
+.search-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 8px 0 8px;
+  background: var(--bg-color); /* use theme variable */
+}
+
+.search-toggle-group {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+  background: var(--bg-color); /* use theme variable */
+  border-radius: 25px;
+  overflow: hidden;
+  width: fit-content;
+  margin-inline: auto;
+  transition: 3s;
+  border: 1px solid #bbb;
+}
+
+.search-toggle-btn {
+  padding: 8px 28px;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  background: transparent;
+  color: var(--text-color); /* ensure text adapts too */
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.search-toggle-btn.active {
+  background: #2563EB;
+  color: white; 
+}

@@ -1,0 +1,92 @@
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.onboarding-container h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.onboarding-container p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.vahana-highlight {
+  color: #2563EB; /* bright blue */
+  font-weight: bold;
+}
+
+.swipe-hint {
+  font-size: 14px;
+  color: #999;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 87vh; /* prevent scroll */
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.onboarding-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onboarding-dots {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+
+.onboarding-dot.active {
+  background-color: #000000; /* Your theme's highlight color */
+}
+
+.onboarding-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.onboarding-image {
+  width: 110%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 25px;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

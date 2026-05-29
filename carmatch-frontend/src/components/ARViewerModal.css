@@ -1,0 +1,80 @@
+/* Fullscreen overlay */
+.ar-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal container inside mobile frame */
+.ar-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  height: 95%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Top bar: Cross button + Background dots */
+.ar-top-bar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 12px 8px; /*pushed top bar down by 20px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Close (X) button */
+.ar-close-button {
+  background: #ffffff;
+  border: none;
+  font-size: 22px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* model-viewer styling */
+model-viewer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* Background selector */
+.ar-bg-selector {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ar-bg-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ar-bg-button.active {
+  transform: scale(1.3);
+  border: 2px solid #00b4d8;
+}

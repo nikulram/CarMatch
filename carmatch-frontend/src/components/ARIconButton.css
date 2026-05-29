@@ -1,0 +1,21 @@
+.ar-icon-button {
+    background-color: #5b4dee;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.2s ease;
+  }
+  
+  .ar-icon-button:hover {
+    background-color: #4338ca;
+  }
+  
+  .ar-icon-button svg {
+    display: block;
+  }
+  

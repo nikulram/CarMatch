@@ -1,0 +1,203 @@
+.hitch-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hitch-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hitch-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-with-btn {
+  position: relative; /* Enable absolute positioning for dropdown */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hitch-input {
+  flex: 1;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.loc-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  cursor: pointer;
+}
+
+.hitch-button {
+  background-color: #000;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #bbb;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hitch-button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.hitch-error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Ride Result Cards */
+.ride-card {
+  background: var(--bg-color); /* use theme variable */
+  border-radius: 25px;
+  border: 1px solid #bbb;
+  padding: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.ride-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ride-sub {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+  gap: 2px;
+}
+
+.ride-sub span::before {
+  content: "• ";
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.ride-bar-container {
+  background: #eee;
+  height: 8px;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.ride-bar {
+  height: 100%;
+  border-radius: 25px;
+}
+
+/* Price Comparison Chart */
+.price-comparison-box {
+  margin-top: 20px;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+  border: 1px solid #bbb;
+  padding: 16px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.circle-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.circle {
+  width: 100px;
+  height: 80px;
+  border-radius: 25px;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 16px;
+  font-size: 14px;
+  padding: 6px;
+  text-align: center;
+}
+
+.circle.green {
+  background: #4caf50;
+  color: white;
+}
+
+.circle.gray {
+  background: #bbb;
+  color: #333;
+}
+
+.book-button {
+  margin-top: 16px;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Autocomplete List */
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 2px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-item {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+.autocomplete-item:last-child {
+  border-bottom: none;
+}
+
+.autocomplete-item:hover {
+  /* background: #f5f5f5; */
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}

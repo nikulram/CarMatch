@@ -1,0 +1,173 @@
+.authContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: #f9fafb;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  overflow: hidden;
+}
+
+.topGradient {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(to right, #6b21a8, #1e40af);
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.bottomGradient {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, #1e40af, #6b21a8);
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  margin-top: auto;
+}
+
+.innerBox {
+  background-color: #111827;
+  width: 100%;
+  max-width: 360px;
+  padding: 36px 24px;
+  border-radius: 25px;
+  margin-top: -80px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.logoWrapper {
+  margin: 0 auto 20px;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.inputWrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+/* Full fixed input */
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #1f2937 !important;
+  border: 1px solid #374151;
+  border-radius: 25px;
+  color: #f9fafb;
+  font-size: 16px;
+  outline: none;
+  appearance: none;
+  transition: all 0.2s ease;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.input:focus {
+  background-color: #1f2937;
+  color: #f9fafb;
+  border: 1px solid #6366f1;
+  box-shadow: inset 0 0 0 1.5px #6366f1;
+}
+
+.input:-webkit-autofill {
+  background-color: #1f2937 !important;
+  box-shadow: 0 0 0px 1000px #1f2937 inset !important;
+  -webkit-text-fill-color: #f9fafb !important;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #9ca3af;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPassword {
+  font-size: 13px;
+  color: #60a5fa;
+  text-align: right;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  width: 100%;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #374151;
+}
+
+.orText {
+  margin: 0 12px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.switchText {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.link {
+  color: #60a5fa;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.message {
+  color: crimson;
+  font-size: 14px;
+  margin-top: 12px;
+}

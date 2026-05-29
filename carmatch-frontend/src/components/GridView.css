@@ -1,0 +1,126 @@
+.grid-view {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+.grid-card {
+  position: relative;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #bbb;
+}
+
+.grid-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.grid-info {
+  padding: 10px;
+  text-align: center;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+/*Main icon stack */
+.grid-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*Used for all top-right action buttons */
+.fav-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+  border: 1px solid #bbb;
+}
+
+.fav-btn:hover {
+  transform: scale(1.1);
+}
+
+.grid-filter-wrapper {
+  padding: 0 12px;
+}
+
+.filtered-list {
+  margin-top: 16px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.car-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.car-line {
+  font-size: 14px;
+  background: #f9f9f9;
+  padding: 10px 12px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inline-fav {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ff4757;
+}
+
+.no-results-text {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.fav-btn.in-cart svg {
+  color: #007bff;
+  transform: scale(1.15);
+}
+
+/* AR badge style */
+.ar-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #5b4dee;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 25px;
+  font-weight: 600;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

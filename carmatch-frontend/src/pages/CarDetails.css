@@ -1,0 +1,47 @@
+.details-page {
+  padding: 16px;
+  padding-bottom: 90px;
+  font-family: sans-serif;
+}
+
+.car-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.car-info h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.price {
+  color: #c00;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.desc {
+  margin-top: 10px;
+  color: #444;
+  font-size: 14px;
+}
+
+.action-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-btns button {
+  background: #222;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+/* MobileContainer.css that prevents the background from scrolling */
+.mobile-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f0f2f5; */
+  background: var(--bg-color); /* use theme variable */
+
+  /* Prevent gestures */
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+.mobile-inner {
+  width: 390px;
+  height: 844px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative; /* Required for BottomNav absolute placement */
+  border: 1px solid #bbb;
+}
+
+/* Base layout for all pages */
+.mobile-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: env(safe-area-inset-top, 20px);      /*Dynamic Island space */
+  padding-bottom: env(safe-area-inset-bottom, 24px); /*Home bar space (just in case) */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+/* Pages with BottomNav */
+.mobile-content-with-padding {
+  padding-bottom: 92px; /* raised to match BottomNav height + safe space */
+}

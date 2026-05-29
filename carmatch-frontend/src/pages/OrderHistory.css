@@ -1,0 +1,122 @@
+.buy-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.buy-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0 18px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="search"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 25px;
+  border: 1px solid var(--nav-boarder);
+  font-size: 14px;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.dummy-button {
+  background: var(--card-bg);
+  border: 1px solid var(--nav-boarder);
+  border-radius: 25px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--nav-icons);
+  cursor: pointer;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 12px 16px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+  border: 1px solid var(--nav-boarder);
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 25px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.cart-img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 1px solid var(--nav-boarder);
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: var(--text-color);
+}
+
+.cart-info p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: var(--nav-icons);
+}
+
+.cart-meta {
+  font-size: 12px;
+  color: var(--nav-boarder);
+}
+
+.add-card-button {
+  background: var(--button-color);
+  color: var(--button-text);
+  font-weight: 600;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 6px;
+  transition: background 0.3s ease;
+}
+
+.add-card-button:hover {
+  background: var(--primary-color);
+}

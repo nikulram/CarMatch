@@ -1,0 +1,157 @@
+/* Notifications container */
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  background-color: var(--bg-color); /* Use light or dark background based on theme */
+}
+
+/* Notifications list */
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Individual notification card */
+.notification-item {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+/* Car image */
+.car-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* SOLD badge */
+.sold-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #e63946;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+/* Message section */
+.notification-message-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Avatar */
+.notification-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+/* Message details */
+.notification-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notification-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.notification-subtext {
+  font-size: 13px;
+  color: var(--subtext-color);
+}
+
+.notification-time {
+  font-size: 12px;
+  color: var(--time-color);
+  align-self: flex-end;
+}
+
+/* Notification type box (New message, Sold, Transaction complete) */
+.notification-type-box {
+  background-color: var(--type-bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--type-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Action buttons */
+.notification-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.notification-button {
+  flex: 1;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.notification-button.secondary {
+  background-color: var(--secondary-button-bg);
+  color: var(--secondary-button-text);
+}
+
+/* Themes */
+body[data-theme="light"] {
+  --bg-color: #f9f9f9;
+  --card-bg: white;
+  --text-color: #222;
+  --subtext-color: #555;
+  --time-color: #999;
+  --type-bg: #f0f0f0;
+  --type-text: #333;
+  --button-bg: #6c63ff;
+  --button-text: white;
+  --secondary-button-bg: #f0f0f0;
+  --secondary-button-text: #333;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #121421;
+  --card-bg: #1a1d2e;
+  --text-color: #eee;
+  --subtext-color: #bbb;
+  --time-color: #888;
+  --type-bg: #2c2f45;
+  --type-text: #ddd;
+  --button-bg: #6c63ff;
+  --button-text: white;
+  --secondary-button-bg: #2c2f45;
+  --secondary-button-text: #ddd;
+}

@@ -1,0 +1,30 @@
+/* Default Light Mode Theme */
+body[data-theme='light'] {
+  --bg-color: #f9f9f9;
+  --text-color: #000000;
+  --card-bg: linear-gradient(to right, #E4E8FD, #f0f0f0);
+  --button-color: #8065EC;
+  --button-text: #ffffff;
+  --primary-color: #8065EC;
+  --boarder: #e0e0e0;
+  --nav-boarder: #dddddd;
+  --nav-icons:#444;
+  --nav-color: #141826;
+  --nav-text:#EBE7D9;
+}
+
+/* Optional: Dark Mode Theme */
+body[data-theme='dark'] {
+  --bg-color: #141826;
+  --icon-containers: #232936;
+  --text-color: #ffffff;
+  --card-bg: linear-gradient(to right, #212248, #15192A);
+  --button-color: #8065EC;
+  --button-text: #ffffff;
+  --primary-color: #8065EC;
+  --nav-boarder: #aaaaaa;
+  --nav-icons: #BBBBBB;
+  --nav-color: #EBE7D9;
+  --nav-text: #141826;
+}
+

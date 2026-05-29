@@ -1,0 +1,155 @@
+/* Bottom Navigation Bar */
+.bottomNav {
+  position: absolute; /* Inside .mobile-inner */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--nav-boarder);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Keep icons high while top edge drops */
+  z-index: 999;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+}
+
+/* Bottom Nav Buttons */
+.bottomNav button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: var(--nav-icons);
+  cursor: pointer;
+}
+
+.bottomNav i {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+/* Floating Action Button (FAB) Wrapper */
+.fabWrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+  margin-top: -24px;
+}
+
+/* Main Blue FAB Button */
+.fab {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff !important;
+  color: white !important;
+  font-size: 50px;
+  font-weight: 900;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+/* Plus icon inside the FAB */
+.fab-plus {
+  font-size: 40px;
+  font-weight: 900;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  line-height: 1;
+  transform: translatey(-0%);
+}
+
+.fab-plus.open {
+  transform: rotate(45deg) scale(1);
+}
+
+/* Expanded FAB state */
+.fab.expanded {
+  width: 220px;
+  height: 110px;
+  border-radius: 110px 110px 0 0;
+  background-color: #007bff;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+/* FAB Option Container */
+.fab-options-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+
+/* FAB Option Buttons */
+.fab-option {
+  position: absolute;
+  background-color: var(--nav-color) !important;
+  color: var(--nav-text) !important;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  border: none;
+  transform: translate(0, 0) scale(0);
+  transition: transform 0.4s ease, opacity 0.7s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show FAB Options */
+.fab-option.show {
+  opacity: 1;
+  scale: 1;
+  pointer-events: auto;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Option Positions */
+.fab-option.buy.show {
+  transform: translate(-60px, -60px) scale(1);
+  transition-delay: 0.05s;
+}
+
+.fab-option.sell.show {
+  transform: translate(0px, -85px) scale(1);
+  transition-delay: 0.1s;
+}
+
+.fab-option.rent.show {
+  transform: translate(60px, -60px) scale(1);
+  transition-delay: 0.15s;
+}
+
+/* Reset transition delay when hidden */
+.fab-option:not(.show) {
+  transition-delay: 0s !important;
+}

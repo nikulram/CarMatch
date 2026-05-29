@@ -1,0 +1,332 @@
+.home-container {
+  padding: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+.home-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.vahana-logo {
+  height: 18px;
+  font-weight: bold;
+  color: #2563EB;
+}
+
+.top-icons i {
+  font-size: 18px;
+  /* color: #555; */
+  color: var(--text-color); /* ensure text adapts too */
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.brand-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 12px;
+}
+
+.story-placeholder {
+  font-size: 14px;
+  color: #999;
+  margin-left: 4px;
+}
+
+.buy-rent-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.buy-rent-toggle button {
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #eee;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  border: 1px solid #bbb;
+}
+
+.buy-rent-toggle button.active {
+  background-color: #2563EB;
+  color: white;
+}
+
+.car-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.car-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: 0.3s;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+.car-card.greyed-out {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.car-image-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  scroll-snap-type: x mandatory;
+  border-radius: 25px;
+  position: relative;
+}
+
+.car-image {
+  flex-shrink: 0;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  border-radius: 25px;
+}
+
+.ribbon-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 25px;
+  z-index: 2;
+  font-weight: bold;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.ar-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #5b4dee;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 25px;
+  font-weight: 600;
+  z-index: 5;
+}
+
+.heart-btn {
+  background: white;
+  border: none;
+  border-radius:25px;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-btn svg {
+  font-size: 18px;
+  color: #999;
+}
+
+.heart-btn.liked svg {
+  color: #ff4757;
+  transform: scale(1.2);
+}
+
+.heart-btn.in-cart svg {
+  color: #2563EB;
+}
+
+.car-info {
+  padding: 12px;
+  
+}
+
+.car-info h3 {
+  margin: 0;
+  font-size: 16px;
+  background: var(--bg-color); /* use theme variable */
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #467bff;
+  margin-top: 4px;
+}
+
+.specs {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.mode-tag {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-weight: bold;
+  color: white;
+  pointer-events: none;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+.mode-tag.buy {
+  background-color: rgba(255, 77, 77, 0.85);
+}
+
+.mode-tag.rent {
+  background-color: rgba(38, 132, 255, 0.85);
+}
+
+.rental-status-text {
+  position: absolute;
+  bottom: 30px;
+  left: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: #333;
+  backdrop-filter: blur(2px);
+}
+
+.rented-until-text {
+  color: #007bff;
+}
+
+.overdue-text {
+  color: #cc0000;
+}
+
+.story-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.close-story {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.story-top-bar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.story-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.story-main-image {
+  width: 90%;
+  max-height: 65%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.story-caption {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.story-caption h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.story-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  cursor: pointer;
+}
+
+.story-nav.left {
+  left: 0;
+}
+
+.story-nav.right {
+  right: 0;
+}
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.story-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+}
+
+.story-title {
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: center;
+  color: var(--text-color); /* ensure text adapts too */
+}
+
+

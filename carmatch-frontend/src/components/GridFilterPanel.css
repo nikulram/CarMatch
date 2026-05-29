@@ -1,0 +1,64 @@
+.filter-panel {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: sans-serif;
+  }
+  
+  .search-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .filter-search {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+  
+  .back-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+    color: var(--text-color); /* ensure text adapts too */
+  }
+  
+  .slider-group label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .editable-range {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+    /* width: 100%; */
+    background: var(--bg-color); /* use theme variable */
+    color: var(--text-color); /* ensure text adapts too */
+  }
+  
+  .editable-range input {
+    width: 80px;
+    padding: 6px 8px;
+    font-size: 13px;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    /* background: var(--bg-color); /* use theme variable 
+    color: var(--text-color); ensure text adapts too */
+  }
+  
+  .sort-dropdown {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+  }
+  
